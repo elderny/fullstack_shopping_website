@@ -4,6 +4,7 @@ export default function Navbar() {
         <header className="text-gray-600 body-font">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                    <span className="mr-5 hover:text-gray-900 cursor-pointer"><Link href={'/'}>Home</Link></span>
                     <span className="mr-5 hover:text-gray-900 cursor-pointer"><Link href={'/register'}>Register</Link></span>
                     <span className="mr-5 hover:text-gray-900 cursor-pointer"><Link href={'/login'}>Login</Link></span>
                 </nav>
