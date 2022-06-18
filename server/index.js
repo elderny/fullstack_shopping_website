@@ -7,5 +7,5 @@ const app = require('express')(),
 
 app.use(bodyParser, morgan)
 mongoose.connect('mongodb://127.0.0.1:27017/shopping_website')
-app.get('/api', (request, response) => response.send('hi' + JSON.stringify(request.query)))
+app.use('/api', require('./controllers'))
 app.listen(PORT)
