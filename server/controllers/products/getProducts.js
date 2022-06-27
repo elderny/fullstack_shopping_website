@@ -23,6 +23,6 @@ const getProducts = async (req, res) => {
             }
         }
     })
-    res.send(sortedData)
+    res.json(sortedData)
 }
 module.exports = getProducts
